@@ -9,7 +9,7 @@
     $(document).ready(function(){
         $('#card_data').hide();
         $('#meio_pagamento').change(function(){
-            if($('#meio_pagamento').val() == 'cc'){
+            if($('#meio_pagamento').val() == 'CreditCard'){
                 $('#card_data').show();
                 $('#card_number').attr('required','required');
                 $('#cvv').attr('required','required');
@@ -62,7 +62,7 @@
                 </select>
             </div><br />
             <div class="row col-lg12"  id="card_data">
-                <input type="text" id="card_number" name="card_number" placeholder="Número do Cartão" maxlength="16">&nbsp;&nbsp;&nbsp;<input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3">&nbsp;&nbsp;&nbsp;Validade:&nbsp;&nbsp;<input type="text" id="mes" name="mes" size="1" placeholder="Mês" maxlength="2">&nbsp;&nbsp;<input type="text" id="ano" name="ano" size="1" placeholder="Ano" maxlength="4">
+                <input type="text" id="card_number" name="card_number" placeholder="Número do Cartão" maxlength="16">&nbsp;&nbsp;&nbsp;<input type="text" id="cvv" name="cvv" size="1" placeholder="CVV" maxlength="3">&nbsp;&nbsp;&nbsp;Validade:&nbsp;&nbsp;<input type="text" id="mes" name="mes" size="1" placeholder="Mês" maxlength="2">&nbsp;&nbsp;<input type="text" id="ano" name="ano" size="1" placeholder="Ano" maxlength="4">
             </div><br /><br />
             <div class="row col-md-6">
                 <input type="submit" class="btn btn-primary" value="Efetuar Cobrança">
