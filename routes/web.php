@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AtendimentoController;
-use App\Http\Controllers\EstoqueController;
 use App\Http\Controllers\ProdutoController;
 
 Route::get('/listagemAtendimentos', [AtendimentoController::class, 'listagemAtendimento'])->name('listagemAtendimento');
